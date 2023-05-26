@@ -5,6 +5,14 @@ body{
 /***Header ***/
 .header{
     border:1px solid red;
+    display: flex;
+    justify-content: center;
+
+    font-size: xx-large;
+    font-style: oblique;
+    font-stretch:ultra-expanded;
+    font-weight: bolder;
+    color:rgb(125, 94, 15);
 }
 
 /*** main Section ***/
@@ -13,11 +21,18 @@ body{
 }
 
 /*** Add books section **/
+
+.add-book{
+    display: flex;
+    justify-content: center;
+}
 .add-btn{
     width: 200px;
     height: 50px;
     background-color: blueviolet;
     color: aliceblue;
+    font-size: medium;
+
 }
 
 
@@ -35,4 +50,22 @@ body{
     height: 350px;
     background-color: aliceblue;
     box-shadow: inset;
+
+    font-size: x-small;
+    color: brown;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap:10px;
+}
+
+.read-btn{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(35, 173, 20);
+    color: aliceblue;
+    font-size: medium;
 }
