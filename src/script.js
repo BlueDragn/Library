@@ -17,10 +17,10 @@ Book.prototype.info = function() {
 
 function addBookToLibrary() {
     // Adding books to the library
-  var title = prompt("Enter the title of the book:");
-  var author = prompt("Enter the author of the book:");
-  var pages = parseInt(prompt("Enter the number of pages in the book:"));
-  var hasRead = confirm("Have you read the book?");
+  var title = ''
+  var author = '';
+  var pages = '';
+  var hasRead = '';
 
   var newBook = new Book(title, author, pages, hasRead);
   myLibrary.push(newBook);

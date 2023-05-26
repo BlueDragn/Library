@@ -1,3 +1,38 @@
 body{
     background-color: rgb(54, 172, 172);
 }
+
+/***Header ***/
+.header{
+    border:1px solid red;
+}
+
+/*** main Section ***/
+.main{
+    border: 1px solid yellow;
+}
+
+/*** Add books section **/
+.add-btn{
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+
+
+
+
+
+/*** Cards section ***/
+.card-container{
+    border: 1px solid green;
+}
+.card{
+    border:1px solid black;
+    width: 250px;
+    height: 350px;
+    background-color: aliceblue;
+    box-shadow: inset;
+}
