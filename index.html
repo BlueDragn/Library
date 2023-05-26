@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,56 @@
     <link rel="stylesheet" href="./src/styles/style.css">
     <title>Library</title>
 </head>
+
 <body>
 
-<header class="header">
-    <h1>My Library</h1>
-</header>
-<!----Main section Library-->
-<section class="main" id="library">
+    <header class="header">
+        <h1>My Library</h1>
 
-     <!------- Add Books ------->
-     <section class="add-book">
-        <div class="add-btn-con">
-            <button class="add-btn">+add Books</button>
-        </div>
+    </header>
+    <!----Main section Library-->
+    <section class="main" id="library">
+
+        <!------- Add Books ------->
+        <section class="add-book">
+            <div class="add-btn-con">
+                <button class="add-btn">+add Books</button>
+            </div>
+            <!---form ----->
+            <div class="form-container">
+
+                <form class="form">
+                    <label for="title">Title</label>
+                    <input type="text" name="title"><br>
+
+                    <label for="author">Author</label>
+                    <input type="text" name="author"><br>
+                    <input type="number" name="pages">
+                    <input type="checkbox" id="not read" name="read-status" value="not-read"><br>
+                    <label for="read-status"> Not read</label>
+                    <input type="checkbox" id="read" name="read-status" value="read"><br>
+                    <label for="read-status"> Read</label>
+                    <input type="checkbox" name="read-status"><br>
+                    <button class="add-btn">Add</button>
+
+                </form>
+            </div>
+        </section>
+        <!-----Book cards -->
+        <section class="cards-container">
+            <div class="card">
+                <h2>Title:</h2>
+                <h2>Author:</h2>
+                <h2>Pages</h2>
+                <button class="read-btn">Not Read</button>
+            </div>
+        </section>
+
+
     </section>
-    <!-----Book cards -->
-    <section class="cards-container">
-        <div class="card">
-            <h2>Title:</h2>
-            <h2>Author:</h2>
-            <h2>Pages</h2>
-            <button class="read-btn">Not Read</button>
-        </div>
-    </section>
 
 
-</section>
-
-
-<script src="./src/script.js"> </script>
+    <script src="./src/script.js"> </script>
 </body>
+
 </html>
