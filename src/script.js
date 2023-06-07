@@ -59,5 +59,5 @@ var addBtn = document.querySelector('.add-btn');
 addBtn.addEventListener('click', function(event) {
   event.preventDefault(); // Prevent form submission
   addBookToLibrary();
-  bookCard.style.display = "block";
+  bookCard.style.display = "flex";
 });
