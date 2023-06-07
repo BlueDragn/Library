@@ -19,25 +19,25 @@
     <section class="main" id="library">
 
         <!------- Add Books ------->
-        <section class="add-book">
+        <!-- <section class="add-book">
             <div class="add-btn-con">
                 <button class="add-btn">+add Books</button>
-            </div>
+            </div> -->
             <!---form ----->
             <div class="form-container">
 
                 <form class="form">
                     <!--- Tile-->
                     <label for="title">Title</label>
-                    <input type="text" name="title"><br>
+                    <input type="text" name="title" required><br>
 
                     <!-----Author ----->
                     <label for="author">Author</label>
-                    <input type="text" name="author"><br>
+                    <input type="text" name="author" required><br>
 
                     <!---Pages ---->
-                    <input type="number" name="pages">
-                    <input type="checkbox" id="not read" name="read-status" value="not-read"><br>
+                    <input type="number" name="pages" required> <br>
+
 
                     <!--- Reading Status-->
                     <label for="read-status"> Not read</label>
@@ -45,14 +45,14 @@
                     <label for="read-status"> Read</label>
                     <input type="checkbox" name="read-status"><br>
 
-                    <!---Button to add this book -->
-                    <button class="add-btn">Add</button>
+                    <!-- -Button to add this book -->
+                     <button type="submit"  class="add-btn" >Add</button>
 
                 </form>
             </div>
         </section>
         <!-----Book cards -->
-        <section class="cards-container">
+        <section class="cards-container" style="display: none;">
             <div class="card">
                 <h2>Title:</h2>
                 <h2>Author:</h2>

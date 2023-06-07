@@ -51,9 +51,12 @@ function displayBooks() {
   });
 }
 
+
+var bookCard = document.querySelector(".cards-container");
 // Add event listener to the Add button
 var addBtn = document.querySelector('.add-btn');
 addBtn.addEventListener('click', function(event) {
   event.preventDefault(); // Prevent form submission
   addBookToLibrary();
+  bookCard.style.display = "block";
 });
