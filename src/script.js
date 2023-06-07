@@ -25,6 +25,7 @@ function addBookToLibrary() {
   myLibrary.push(newBook);
 
   // Clear input fields after adding book
+
   document.querySelector('input[name="title"]').value = '';
   document.querySelector('input[name="author"]').value = '';
   document.querySelector('input[name="pages"]').value = '';
